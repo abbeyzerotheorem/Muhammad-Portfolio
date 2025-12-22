@@ -2,9 +2,17 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { Menu } from 'lucide-react';
+
 import { KnightHelmetIcon } from './icons/knight-helmet-icon';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from '@/components/ui/sheet';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,6 +56,28 @@ export default function Header() {
               </Button>
             ))}
           </nav>
+          
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <div className="flex flex-col space-y-4 pt-8">
+                  {navItems.map((item) => (
+                    <SheetClose asChild key={item.name}>
+                      <Link href={item.href} className="text-xl font-medium text-center hover:text-accent transition-colors py-2">
+                        {item.name}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
