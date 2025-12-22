@@ -49,7 +49,7 @@ export default function Home() {
             <GeometricShape className="w-56 h-56 border-[20px] top-[70%] right-[15%]" />
           </ParallaxLayer>
           <div className="z-10 flex flex-col items-center p-4">
-            <h1 className="font-headline text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter">
+            <h1 className="font-headline text-5xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter">
               Muhammad Taha
             </h1>
             <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl">
