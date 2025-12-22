@@ -12,6 +12,7 @@ import ProjectCard from "@/components/project-card";
 import { ParallaxLayer } from "@/components/parallax-layer";
 import ContactForm from "@/components/contact-form";
 import ScrollToTop from "@/components/scroll-to-top";
+import { ScrollAnimation } from "@/components/scroll-animation";
 
 const projects = [
   { id: 'project-1', title: 'Brand Identity for Zenith Corp', tags: ['Logo Design', 'Branding', 'Typography'], imageId: 'project1' },
@@ -63,90 +64,96 @@ export default function Home() {
         </section>
 
         {/* Projects Showcase */}
-        <section id="projects" className="py-20 md:py-32 bg-card relative overflow-hidden">
-           <ParallaxLayer speed={-0.1} className="absolute inset-0">
-            <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(hsl(var(--accent))_1px,transparent_1px)] [background-size:16px_16px]"></div>
-          </ParallaxLayer>
-          <div className="container mx-auto px-4 z-10 relative">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-12">
-              Projects Showcase
-            </h2>
-            <p className="text-center max-w-2xl mx-auto mb-16 text-foreground/80">
-              Armored with creativity, shielded by precision. Here lies a gallery of conquered creative challenges and forged visual identities.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
+        <ScrollAnimation>
+          <section id="projects" className="py-20 md:py-32 bg-card relative overflow-hidden">
+            <ParallaxLayer speed={-0.1} className="absolute inset-0">
+              <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(hsl(var(--accent))_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            </ParallaxLayer>
+            <div className="container mx-auto px-4 z-10 relative">
+              <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-12">
+                Projects Showcase
+              </h2>
+              <p className="text-center max-w-2xl mx-auto mb-16 text-foreground/80">
+                Armored with creativity, shielded by precision. Here lies a gallery of conquered creative challenges and forged visual identities.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {projects.map((project) => (
+                  <ProjectCard key={project.id} project={project} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </ScrollAnimation>
 
         {/* About Section */}
-        <section id="about" className="py-20 md:py-32">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-              <div className="md:col-span-1 flex justify-center">
-                {avatar && (
-                  <div className="relative">
-                    <Image
-                      src={avatar.imageUrl}
-                      alt={avatar.description}
-                      width={300}
-                      height={300}
-                      className="rounded-full object-cover border-4 border-card"
-                      data-ai-hint={avatar.imageHint}
-                    />
-                     <div className="absolute inset-0 rounded-full shadow-[0_0_40px_10px_hsl(var(--accent)/0.4)] animate-pulse" style={{ animationDuration: '3s' }}></div>
-                  </div>
-                )}
-              </div>
-              <div className="md:col-span-2 text-center md:text-left">
-                <h2 className="font-headline text-4xl md:text-5xl font-bold">
-                  The Knight Behind the Designs
-                </h2>
-                <p className="mt-6 text-lg text-foreground/80 max-w-2xl mx-auto md:mx-0">
-                  I’m Muhammad Taha, a Graphic Designer on a quest to transform ideas into visual legends. I wield creativity as my sword and design principles as my shield.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-20 md:py-32 bg-card relative overflow-hidden">
-          <ParallaxLayer speed={-0.2} className="absolute inset-0">
-             <GeometricShape className="w-64 h-64 border-[30px] rounded-lg top-[50%] left-[-100px] transform -translate-y-1/2 rotate-45" />
-          </ParallaxLayer>
-          <div className="container mx-auto px-4 z-10 relative">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-12">
-              Join the Quest
-            </h2>
-            <p className="text-center max-w-2xl mx-auto mb-16 text-foreground/80">
-              Have a creative challenge that needs conquering? Send a raven, or use the form below.
-            </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-5xl mx-auto">
-              <div>
-                <h3 className="font-headline text-2xl font-bold mb-6">Contact Details</h3>
-                <div className="space-y-4 text-lg">
-                  <a href="mailto:mt3661066@gmail.com" className="flex items-center gap-4 group">
-                    <Mail className="w-6 h-6 text-accent"/>
-                    <span className="group-hover:text-accent transition-colors">mt3661066@gmail.com</span>
-                  </a>
-                   <a href="tel:+923175722776" className="flex items-center gap-4 group">
-                    <Phone className="w-6 h-6 text-accent"/>
-                    <span className="group-hover:text-accent transition-colors">+92 317 5722776</span>
-                  </a>
-                  <a href="https://instagram.com/imdesignerknight" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                    <Instagram className="w-6 h-6 text-accent"/>
-                    <span className="group-hover:text-accent transition-colors">@imdesignerknight</span>
-                  </a>
+        <ScrollAnimation>
+          <section id="about" className="py-20 md:py-32">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div className="md:col-span-1 flex justify-center">
+                  {avatar && (
+                    <div className="relative">
+                      <Image
+                        src={avatar.imageUrl}
+                        alt={avatar.description}
+                        width={300}
+                        height={300}
+                        className="rounded-full object-cover border-4 border-card"
+                        data-ai-hint={avatar.imageHint}
+                      />
+                      <div className="absolute inset-0 rounded-full shadow-[0_0_40px_10px_hsl(var(--accent)/0.4)] animate-pulse" style={{ animationDuration: '3s' }}></div>
+                    </div>
+                  )}
+                </div>
+                <div className="md:col-span-2 text-center md:text-left">
+                  <h2 className="font-headline text-4xl md:text-5xl font-bold">
+                    The Knight Behind the Designs
+                  </h2>
+                  <p className="mt-6 text-lg text-foreground/80 max-w-2xl mx-auto md:mx-0">
+                    I’m Muhammad Taha, a Graphic Designer on a quest to transform ideas into visual legends. I wield creativity as my sword and design principles as my shield.
+                  </p>
                 </div>
               </div>
-              <ContactForm />
             </div>
-          </div>
-        </section>
+          </section>
+        </ScrollAnimation>
+
+        {/* Contact Section */}
+        <ScrollAnimation>
+          <section id="contact" className="py-20 md:py-32 bg-card relative overflow-hidden">
+            <ParallaxLayer speed={-0.2} className="absolute inset-0">
+              <GeometricShape className="w-64 h-64 border-[30px] rounded-lg top-[50%] left-[-100px] transform -translate-y-1/2 rotate-45" />
+            </ParallaxLayer>
+            <div className="container mx-auto px-4 z-10 relative">
+              <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-12">
+                Join the Quest
+              </h2>
+              <p className="text-center max-w-2xl mx-auto mb-16 text-foreground/80">
+                Have a creative challenge that needs conquering? Send a raven, or use the form below.
+              </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-5xl mx-auto">
+                <div>
+                  <h3 className="font-headline text-2xl font-bold mb-6">Contact Details</h3>
+                  <div className="space-y-4 text-lg">
+                    <a href="mailto:mt3661066@gmail.com" className="flex items-center gap-4 group">
+                      <Mail className="w-6 h-6 text-accent"/>
+                      <span className="group-hover:text-accent transition-colors">mt3661066@gmail.com</span>
+                    </a>
+                    <a href="tel:+923175722776" className="flex items-center gap-4 group">
+                      <Phone className="w-6 h-6 text-accent"/>
+                      <span className="group-hover:text-accent transition-colors">+92 317 5722776</span>
+                    </a>
+                    <a href="https://instagram.com/imdesignerknight" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                      <Instagram className="w-6 h-6 text-accent"/>
+                      <span className="group-hover:text-accent transition-colors">@imdesignerknight</span>
+                    </a>
+                  </div>
+                </div>
+                <ContactForm />
+              </div>
+            </div>
+          </section>
+        </ScrollAnimation>
       </main>
       <Footer />
       <ScrollToTop />
