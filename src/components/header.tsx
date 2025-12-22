@@ -10,6 +10,8 @@ import { Button } from './ui/button';
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
   SheetClose,
 } from '@/components/ui/sheet';
@@ -66,6 +68,9 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                </SheetHeader>
                 <div className="flex flex-col space-y-4 pt-8">
                   {navItems.map((item) => (
                     <SheetClose asChild key={item.name}>
