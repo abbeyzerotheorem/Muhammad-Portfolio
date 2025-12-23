@@ -43,16 +43,16 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[100svh] flex items-center justify-center text-center overflow-hidden">
           <ParallaxLayer speed={-0.3} className="absolute inset-0">
-            <GeometricShape className="w-48 h-48 border-[12px] rounded-full top-[10%] left-[5%]" />
-            <GeometricShape className="w-32 h-32 border-8 top-[60%] left-[20%]" />
+            <GeometricShape className="w-48 h-48 border-[12px] rounded-full top-[10%] left-[5%] animate-float" />
+            <GeometricShape className="w-32 h-32 border-8 top-[60%] left-[20%] animate-spin-slow" />
           </ParallaxLayer>
           <ParallaxLayer speed={-0.15} className="absolute inset-0">
-            <GeometricShape className="w-24 h-24 border-4 rounded-full top-[25%] right-[10%]" />
-            <GeometricShape className="w-56 h-56 border-[20px] top-[70%] right-[15%]" />
+            <GeometricShape className="w-24 h-24 border-4 rounded-full top-[25%] right-[10%] animate-pulse-border" />
+            <GeometricShape className="w-56 h-56 border-[20px] top-[70%] right-[15%] animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '20s' }} />
           </ParallaxLayer>
           <div className="z-10 flex flex-col items-center p-4">
             <h1 className="font-headline text-5xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter">
-              <span className="text-6xl md:text-8xl lg:text-9xl">Muhammad</span> Taha
+              <span className="text-6xl md:text-7xl lg:text-8xl">Muhammad</span> Taha
             </h1>
             <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl">
               Graphic Designer · Visual Storyteller · Designer Knight
@@ -122,7 +122,7 @@ export default function Home() {
         <ScrollAnimation>
           <section id="contact" className="py-20 md:py-32 bg-card relative overflow-hidden">
             <ParallaxLayer speed={-0.2} className="absolute inset-0">
-              <GeometricShape className="w-64 h-64 border-[30px] rounded-lg top-[50%] left-[-100px] transform -translate-y-1/2 rotate-45" />
+              <GeometricShape className="w-64 h-64 border-[30px] rounded-lg top-[50%] left-[-100px] transform -translate-y-1/2 rotate-45 animate-spin-slow" style={{ animationDuration: '25s' }} />
             </ParallaxLayer>
             <div className="container mx-auto px-4 z-10 relative">
               <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-12">
