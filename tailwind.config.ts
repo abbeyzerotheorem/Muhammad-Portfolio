@@ -106,6 +106,10 @@ export default {
         'pulse-border': {
           '0%, 100%': { borderColor: 'hsl(var(--accent) / 0.2)' },
           '50%': { borderColor: 'hsl(var(--accent) / 0.6)' },
+        },
+        'icon-float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
         }
       },
       animation: {
@@ -115,6 +119,7 @@ export default {
         'float': 'float 6s ease-in-out infinite',
         'spin-slow': 'spin-slow 15s linear infinite',
         'pulse-border': 'pulse-border 4s ease-in-out infinite',
+        'icon-float': 'icon-float 3s ease-in-out infinite',
       },
     },
   },

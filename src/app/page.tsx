@@ -147,9 +147,12 @@ export default function Home() {
                 A collection of the tools and talents I wield to bring creative visions to life. Each one is a trusted weapon in my design quests.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-4xl mx-auto">
-                {skills.map((skill) => (
+                {skills.map((skill, index) => (
                   <div key={skill.name} className="flex flex-col items-center text-center group">
-                    <div className="p-6 bg-background rounded-full border-2 border-border group-hover:border-accent group-hover:scale-110 transition-all duration-300">
+                    <div
+                      className="p-6 bg-background rounded-full border-2 border-border group-hover:border-accent group-hover:scale-110 transition-all duration-300 animate-icon-float"
+                      style={{ animationDelay: `${index * 150}ms` }}
+                    >
                       <skill.icon className="w-12 h-12 text-accent" />
                     </div>
                     <p className="mt-4 font-body font-semibold text-lg">{skill.name}</p>
