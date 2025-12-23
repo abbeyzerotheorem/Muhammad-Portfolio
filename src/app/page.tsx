@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone, LayoutTemplate, PenTool, PencilRuler, WholeWord, Bot } from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import ProjectCard from "@/components/project-card";
@@ -13,6 +13,11 @@ import { ParallaxLayer } from "@/components/parallax-layer";
 import ContactForm from "@/components/contact-form";
 import ScrollToTop from "@/components/scroll-to-top";
 import { ScrollAnimation } from "@/components/scroll-animation";
+import { PhotoshopIcon } from "@/components/icons/photoshop-icon";
+import { IllustratorIcon } from "@/components/icons/illustrator-icon";
+import { IndesignIcon } from "@/components/icons/indesign-icon";
+import { FigmaIcon } from "@/components/icons/figma-icon";
+import { BlenderIcon } from "@/components/icons/blender-icon";
 
 const projects = [
   { id: 'project-1', title: 'Brand Identity for Zenith Corp', tags: ['Logo Design', 'Branding', 'Typography'], imageId: 'project1' },
@@ -27,6 +32,19 @@ const projects = [
   { id: 'project-10', title: 'Typography Exploration', tags: ['Typography', 'Calligraphy', 'Experiment'], imageId: 'project10' },
   { id: 'project-11', title: 'Apparel Graphics for "Urban Threads"', tags: ['Apparel', 'Illustration', 'Streetwear'], imageId: 'project11' },
   { id: 'project-12', title: 'Brand Guide for "Eco Foods"', tags: ['Branding', 'Strategy', 'Guidelines'], imageId: 'project12' },
+];
+
+const skills = [
+  { name: 'Photoshop', icon: PhotoshopIcon },
+  { name: 'Illustrator', icon: IllustratorIcon },
+  { name: 'InDesign', icon: IndesignIcon },
+  { name: 'Figma', icon: FigmaIcon },
+  { name: 'Blender', icon: BlenderIcon },
+  { name: 'Brand Identity', icon: PencilRuler },
+  { name: 'UI/UX Design', icon: LayoutTemplate },
+  { name: 'Typography', icon: WholeWord },
+  { name: 'Illustration', icon: PenTool },
+  { name: 'GenAI', icon: Bot },
 ];
 
 const GeometricShape = ({ className }: { className?: string }) => (
@@ -117,10 +135,34 @@ export default function Home() {
             </div>
           </section>
         </ScrollAnimation>
+        
+        {/* Skills Section */}
+        <ScrollAnimation>
+          <section id="skills" className="py-20 md:py-32 bg-card">
+            <div className="container mx-auto px-4">
+              <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-12">
+                The Knight&apos;s Arsenal
+              </h2>
+              <p className="text-center max-w-2xl mx-auto mb-16 text-foreground/80">
+                A collection of the tools and talents I wield to bring creative visions to life. Each one is a trusted weapon in my design quests.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-4xl mx-auto">
+                {skills.map((skill) => (
+                  <div key={skill.name} className="flex flex-col items-center text-center group">
+                    <div className="p-6 bg-background rounded-full border-2 border-border group-hover:border-accent group-hover:scale-110 transition-all duration-300">
+                      <skill.icon className="w-12 h-12 text-accent" />
+                    </div>
+                    <p className="mt-4 font-body font-semibold text-lg">{skill.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </ScrollAnimation>
 
         {/* Contact Section */}
         <ScrollAnimation>
-          <section id="contact" className="py-20 md:py-32 bg-card relative overflow-hidden">
+          <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
             <ParallaxLayer speed={-0.2} className="absolute inset-0">
               <GeometricShape className="w-64 h-64 border-[30px] rounded-lg top-[50%] left-[-100px] transform -translate-y-1/2 rotate-45 animate-spin-slow" style={{ animationDuration: '25s' }} />
             </ParallaxLayer>

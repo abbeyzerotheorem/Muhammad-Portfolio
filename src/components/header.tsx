@@ -30,6 +30,7 @@ export default function Header() {
   const navItems = [
     { name: 'Projects', href: '#projects' },
     { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -69,7 +70,7 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent side="right">
                 <SheetHeader>
-                  <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col space-y-4 pt-8">
                   {navItems.map((item) => (
