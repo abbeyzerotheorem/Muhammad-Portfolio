@@ -3,79 +3,79 @@
     {
       "id": "avatar",
       "description": "Muhammad Taha avatar",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjYzMTAyNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/2a/4d/06/2a4d066da7f3c0df54b0629a1e03cb9f.jpg",
       "imageHint": "professional portrait"
     },
     {
       "id": "project1",
       "description": "Project 1 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1633533451976-992e226e32d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFuZGluZyUyMGlkZW50aXR5fGVufDB8fHx8MTc2NjM5NjA1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/a3/c2/03/a3c203f26cb516224c82da5f33e5d7f4.jpg",
       "imageHint": "branding identity"
     },
     {
       "id": "project2",
       "description": "Project 2 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYWNrYWdpbmclMjBkZXNpZ258ZW58MHx8fHwxNzY2Mzk2MDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/ec/05/1a/ec051a0221040b46a5c22c4854b7765b.jpg",
       "imageHint": "packaging design"
     },
     {
       "id": "project3",
       "description": "Project 3 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1559028012-481c04fa702d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzY2MzcwMzY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/a0/14/ef/a014efbcad4bf85d91533659c70a712c.jpg",
       "imageHint": "web design"
     },
     {
       "id": "project4",
       "description": "Project 4 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1634986666676-ec8fd927c23d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwYXJ0fGVufDB8fHx8MTc2NjMxMjA3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/00/92/80/009280b2db7ad945a6d2bb6b3f73ded9.jpg",
       "imageHint": "digital art"
     },
     {
       "id": "project5",
       "description": "Project 5 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1584448097764-374f81551427?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb3N0ZXIlMjBkZXNpZ258ZW58MHx8fHwxNzY2MzM4ODg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/8a/ba/50/8aba5068ed7b445dfca43c02944088f3.jpg",
       "imageHint": "poster design"
     },
     {
       "id": "project6",
       "description": "Project 6 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bG9nbyUyMGRlc2lnbnxlbnwwfHx8fDE3NjYzOTYwNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/b9/9b/f8/b99bf8cba4731b969aef41058ff54b4b.jpg",
       "imageHint": "logo design"
     },
     {
       "id": "project7",
       "description": "Project 7 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1541613569553-332a2574a508?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlZGl0b3JpYWwlMjBsYXlvdXR8ZW58MHx8fHwxNzY2Mzk2MDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/736x/2f/c4/ec/2fc4ec9546f388b62d139afba5f03990.jpg",
       "imageHint": "editorial layout"
     },
     {
       "id": "project8",
       "description": "Project 8 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1707396174365-78faec2d4ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHwzZCUyMGljb25zfGVufDB8fHx8MTc2NjM5NjA1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/76/92/d2/7692d24b69f6507f5766fbfa45971285.jpg",
       "imageHint": "3d icons"
     },
     {
       "id": "project9",
       "description": "Project 9 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjYzNDYwMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/1d/ed/c4/1dedc449fd852b219d4ec4e86dfee9df.jpg",
       "imageHint": "social media"
     },
     {
       "id": "project10",
       "description": "Project 10 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1665253359612-310079708700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0eXBvZ3JhcGh5JTIwYXJ0fGVufDB8fHx8MTc2NjM5NjA1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/a3/12/75/a31275cb17591a67de654792d02534bb.jpg",
       "imageHint": "typography art"
     },
     {
       "id": "project11",
       "description": "Project 11 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1609971871408-d3aa17e86be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcHBhcmVsJTIwZ3JhcGhpY3N8ZW58MHx8fHwxNzY2Mzk2MDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/c9/3a/9f/c93a9f5c85d5bd738f00b3fa2b2d14a3.jpg",
       "imageHint": "apparel graphics"
     },
     {
       "id": "project12",
       "description": "Project 12 placeholder image",
-      "imageUrl": "https://images.unsplash.com/photo-1758614364711-ca59728b4921?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmFuZCUyMGd1aWRlfGVufDB8fHx8MTc2NjMwNDU3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.pinimg.com/474x/18/86/cf/1886cfd496bca1e1b1ef3bd8d32d3fa3.jpg",
       "imageHint": "brand guide"
     }
   ]
