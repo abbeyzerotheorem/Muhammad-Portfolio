@@ -1,120 +1,91 @@
 "use client";
 
-import { useActionState } from "react";
-import { useFormStatus } from "react-dom";
-import { useEffect, useRef } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-
-import { submitContactForm } from "@/lib/actions";
+import { useState, useRef, FormEvent } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-
-const contactFormSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-});
-
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button
-      type="submit"
-      disabled={pending}
-      className="w-full border-2 border-accent text-accent bg-transparent hover:bg-accent hover:text-accent-foreground transition-all duration-300 transform hover:scale-105"
-    >
-      {pending ? "Sending..." : "Send Message"}
-    </Button>
-  );
-}
 
 export default function ContactForm() {
-  const [state, formAction] = useActionState(submitContactForm, {
-    message: "",
-    success: false,
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 
-  const form = useForm<z.infer<typeof contactFormSchema>>({
-    resolver: zodResolver(contactFormSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
 
-  useEffect(() => {
-    if (state.message) {
-      toast({
-        title: state.success ? "Success!" : "Error",
-        description: state.message,
-        variant: state.success ? "default" : "destructive",
+    const formData = new FormData(event.currentTarget);
+    formData.append("access_key", "e1e00837-e552-49b2-9717-b8b0babc6ada");
+    
+    // Add a subject for the email
+    formData.append("subject", "New Contact Form Submission from Portfolio");
+    formData.append("from_name", "Designer Knight Portfolio");
+
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
       });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Success!",
+          description: "Your message has been sent successfully.",
+          variant: "default",
+        });
+        formRef.current?.reset();
+      } else {
+        toast({
+          title: "Error",
+          description: data.message || "Failed to send message.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "An unexpected error occurred.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
-    if (state.success) {
-      form.reset();
-      formRef.current?.reset();
-    }
-  }, [state, toast, form]);
+  };
 
   return (
-    <Form {...form}>
-      <form ref={formRef} action={formAction} className="space-y-6">
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="sr-only">Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Your Name" {...field} className="bg-background/50 text-lg p-4"/>
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="sr-only">Email</FormLabel>
-              <FormControl>
-                <Input placeholder="Your Email" {...field} className="bg-background/50 text-lg p-4"/>
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="sr-only">Message</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Your Message" {...field} rows={5} className="bg-background/50 text-lg p-4"/>
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <SubmitButton />
-      </form>
-    </Form>
+    <form ref={formRef} onSubmit={onSubmit} className="space-y-6">
+      <Input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        className="bg-background/50 text-lg p-4"
+      />
+      <Input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        className="bg-background/50 text-lg p-4"
+      />
+      <Textarea
+        name="message"
+        placeholder="Your Message"
+        required
+        rows={5}
+        className="bg-background/50 text-lg p-4"
+      />
+      <Button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full border-2 border-accent text-accent bg-transparent hover:bg-accent hover:text-accent-foreground transition-all duration-300 transform hover:scale-105"
+      >
+        {isSubmitting ? "Sending..." : "Send Message"}
+      </Button>
+    </form>
   );
 }
