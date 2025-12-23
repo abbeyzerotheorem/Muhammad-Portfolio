@@ -70,7 +70,7 @@ export default function Home() {
           </ParallaxLayer>
           <div className="z-10 flex flex-col items-center p-4">
             <h1 className="font-headline text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter">
-              <span className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Muhammad</span> Taha
+              <span className="text-5xl sm:text-5xl md:text-7xl lg:text-8xl">Muhammad</span> Taha
             </h1>
             <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl">
               Graphic Designer · Visual Storyteller · Designer Knight
