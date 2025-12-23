@@ -20,18 +20,18 @@ import { FigmaIcon } from "@/components/icons/figma-icon";
 import { BlenderIcon } from "@/components/icons/blender-icon";
 
 const projects = [
-  { id: 'project-1', title: 'Brand Identity for Zenith Corp', tags: ['Logo Design', 'Branding', 'Typography'], imageId: 'project1' },
-  { id: 'project-2', title: 'Packaging Design for Aura Cosmetics', tags: ['Packaging', 'Illustration', 'Print'], imageId: 'project2' },
-  { id: 'project-3', title: 'Web UI for Fintech Startup', tags: ['UI/UX', 'Web Design', 'Figma'], imageId: 'project3' },
-  { id: 'project-4', title: 'Abstract Digital Art Series', tags: ['Digital Art', 'Illustration', 'Procreate'], imageId: 'project4' },
-  { id: 'project-5', title: 'Event Posters for Music Festival', tags: ['Poster Design', 'Typography', 'Branding'], imageId: 'project5' },
-  { id: 'project-6', title: 'Minimalist Logo Collection', tags: ['Logo Design', 'Branding', 'Minimalism'], imageId: 'project6' },
-  { id: 'project-7', title: 'Editorial Layout for "Vogue"', tags: ['Editorial', 'Typography', 'Layout'], imageId: 'project7' },
-  { id: 'project-8', title: '3D Icons for Tech App', tags: ['3D Design', 'Iconography', 'Blender'], imageId: 'project8' },
-  { id: 'project-9', title: 'Social Media Campaign for "Glow"', tags: ['Social Media', 'Branding', 'Marketing'], imageId: 'project9' },
-  { id: 'project-10', title: 'Typography Exploration', tags: ['Typography', 'Calligraphy', 'Experiment'], imageId: 'project10' },
-  { id: 'project-11', title: 'Apparel Graphics for "Urban Threads"', tags: ['Apparel', 'Illustration', 'Streetwear'], imageId: 'project11' },
-  { id: 'project-12', title: 'Brand Guide for "Eco Foods"', tags: ['Branding', 'Strategy', 'Guidelines'], imageId: 'project12' },
+  { id: 'project-1', tags: ['Logo Design', 'Branding', 'Typography'], imageId: 'project1' },
+  { id: 'project-2',  tags: ['Packaging', 'Illustration', 'Print'], imageId: 'project2' },
+  { id: 'project-3', tags: ['UI/UX', 'Web Design', 'Figma'], imageId: 'project3' },
+  { id: 'project-4', tags: ['Digital Art', 'Illustration', 'Procreate'], imageId: 'project4' },
+  { id: 'project-5', tags: ['Poster Design', 'Typography', 'Branding'], imageId: 'project5' },
+  { id: 'project-6', tags: ['Logo Design', 'Branding', 'Minimalism'], imageId: 'project6' },
+  { id: 'project-7', tags: ['Editorial', 'Typography', 'Layout'], imageId: 'project7' },
+  { id: 'project-8', tags: ['3D Design', 'Iconography', 'Blender'], imageId: 'project8' },
+  { id: 'project-9', tags: ['Social Media', 'Branding', 'Marketing'], imageId: 'project9' },
+  { id: 'project-10', tags: ['Typography', 'Calligraphy', 'Experiment'], imageId: 'project10' },
+  { id: 'project-11', tags: ['Apparel', 'Illustration', 'Streetwear'], imageId: 'project11' },
+  { id: 'project-12', tags: ['Branding', 'Strategy', 'Guidelines'], imageId: 'project12' },
 ];
 
 const skills = [

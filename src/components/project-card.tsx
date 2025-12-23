@@ -7,12 +7,13 @@ import { Badge } from "@/components/ui/badge";
 import {
   Dialog,
   DialogContent,
+  DialogHeader,
+  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 
 type Project = {
   id: string;
-  title: string;
   tags: string[];
   imageId: string;
 };
@@ -32,7 +33,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <div className="overflow-hidden cursor-pointer">
               <Image
                 src={image.imageUrl}
-                alt={project.title}
+                alt={project.id}
                 width={600}
                 height={400}
                 className="object-cover w-full h-auto aspect-video group-hover:scale-105 transition-transform duration-300"
@@ -42,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </DialogTrigger>
         )}
         <CardHeader>
-          <CardTitle className="font-headline text-xl text-left">{project.title}</CardTitle>
+          <CardTitle className="font-headline text-xl text-left">{project.id}</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-2">
@@ -56,9 +57,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </Card>
       {image && (
         <DialogContent className="p-0 border-0 max-w-4xl">
+           <DialogHeader className="sr-only">
+            <DialogTitle>{project.id}</DialogTitle>
+          </DialogHeader>
           <Image
             src={image.imageUrl}
-            alt={project.title}
+            alt={project.id}
             width={1200}
             height={800}
             className="object-contain w-full h-auto rounded-lg"
