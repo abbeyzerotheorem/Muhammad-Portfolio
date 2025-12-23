@@ -42,11 +42,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </div>
           </DialogTrigger>
         )}
-        <CardHeader>
-          <CardTitle className="font-headline text-xl text-left">{project.id}</CardTitle>
-        </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 pt-6">
             {project.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300">
                 {tag}
