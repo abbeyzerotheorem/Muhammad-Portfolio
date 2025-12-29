@@ -38,6 +38,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 height={400}
                 className="object-cover w-full h-auto aspect-video group-hover:scale-105 transition-transform duration-300"
                 data-ai-hint={image.imageHint}
+                unoptimized
               />
             </div>
           </DialogTrigger>
