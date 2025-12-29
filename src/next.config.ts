@@ -1,7 +1,8 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Adding a comment to force a config reload
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -39,7 +40,13 @@ const nextConfig: NextConfig = {
         hostname: 'img.icons8.com',
         port: '',
         pathname: '/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
