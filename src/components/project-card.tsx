@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 alt={project.id}
                 width={600}
                 height={400}
-                className="object-cover w-full h-auto aspect-video group-hover:scale-105 transition-transform duration-300"
+                className="object-cover object-top w-full h-auto aspect-video group-hover:scale-105 transition-transform duration-300"
                 data-ai-hint={image.imageHint}
                 unoptimized
               />
