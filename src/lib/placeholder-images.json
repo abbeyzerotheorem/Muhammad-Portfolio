@@ -3,7 +3,7 @@
     {
       "id": "avatar",
       "description": "Muhammad Taha avatar",
-      "imageUrl": "https://raw.githubusercontent.com/abbeyzerotheorem/image-vault/main/images/1767042036940_WhatsApp_Image_2025-12-27_at_20.43.58.jpeg",
+      "imageUrl": "https://i.pinimg.com/736x/2a/4d/06/2a4d066da7f3c0df54b0629a1e03cb9f.jpg",
       "imageHint": "professional portrait"
     },
     {
@@ -76,6 +76,18 @@
       "id": "project12",
       "description": "Project 12 placeholder image",
       "imageUrl": "https://i.pinimg.com/474x/18/86/cf/1886cfd496bca1e1b1ef3bd8d32d3fa3.jpg",
+      "imageHint": "brand guide"
+    },
+    {
+      "id": "project13",
+      "description": "Project 12 placeholder image",
+      "imageUrl": "https://raw.githubusercontent.com/abbeyzerotheorem/image-vault/main/images/1767042036940_WhatsApp_Image_2025-12-27_at_20.43.58.jpeg",
+      "imageHint": "brand guide"
+    },
+    {
+      "id": "project14",
+      "description": "Project 12 placeholder image",
+      "imageUrl": "https://raw.githubusercontent.com/abbeyzerotheorem/image-vault/main/images/1767042042365_WhatsApp_Image_2025-12-27_at_22.41.28.jpeg",
       "imageHint": "brand guide"
     }
   ]

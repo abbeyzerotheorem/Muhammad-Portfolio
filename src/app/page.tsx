@@ -32,6 +32,8 @@ const projects = [
   { id: 'project-10', tags: ['Typography', 'Calligraphy', 'Experiment'], imageId: 'project10' },
   { id: 'project-11', tags: ['Apparel', 'Illustration', 'Streetwear'], imageId: 'project11' },
   { id: 'project-12', tags: ['Branding', 'Strategy', 'Guidelines'], imageId: 'project12' },
+  { id: 'project-13', tags: ['Branding', 'Strategy', 'Guidelines'], imageId: 'project13' },
+  { id: 'project-14', tags: ['Branding', 'Strategy', 'Guidelines'], imageId: 'project14' },
 ];
 
 const skills = [

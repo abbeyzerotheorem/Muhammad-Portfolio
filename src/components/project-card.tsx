@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Dialog,
@@ -65,6 +65,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             height={800}
             className="object-contain w-full h-auto rounded-lg"
             data-ai-hint={image.imageHint}
+            unoptimized
           />
         </DialogContent>
       )}
