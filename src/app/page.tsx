@@ -118,6 +118,7 @@ export default function Home() {
                         height={300}
                         className="rounded-full object-cover border-4 border-card"
                         data-ai-hint={avatar.imageHint}
+                        unoptimized
                       />
                       <div className="absolute inset-0 rounded-full shadow-[0_0_40px_10px_hsl(var(--accent)/0.4)] animate-pulse" style={{ animationDuration: '3s' }}></div>
                     </div>
