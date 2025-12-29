@@ -54,7 +54,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </CardContent>
       </Card>
       {image && (
-        <DialogContent className="p-0 border-0 max-w-4xl">
+        <DialogContent className="p-0 border-0 bg-transparent shadow-none max-w-[90vw] max-h-[90vh] w-auto h-auto">
            <DialogHeader className="sr-only">
             <DialogTitle>{project.id}</DialogTitle>
           </DialogHeader>
@@ -63,7 +63,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             alt={project.id}
             width={1200}
             height={800}
-            className="object-contain w-full h-auto rounded-lg"
+            className="object-contain w-full h-full rounded-lg"
             data-ai-hint={image.imageHint}
             unoptimized
           />
