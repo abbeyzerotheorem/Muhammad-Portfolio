@@ -20,6 +20,7 @@ import { FigmaIcon } from "@/components/icons/figma-icon";
 import { BlenderIcon } from "@/components/icons/blender-icon";
 
 const projects = [
+  { id: 'project-15', tags: ['Brand Identity', 'Fintech', 'SadaPay'], imageId: 'sadapay-project' },
   { id: 'project-1', tags: ['Logo Design', 'Branding', 'Typography'], imageId: 'project1' },
   { id: 'project-2',  tags: ['Packaging', 'Illustration', 'Print'], imageId: 'project2' },
   { id: 'project-3', tags: ['UI/UX', 'Web Design', 'Figma'], imageId: 'project3' },
@@ -208,5 +209,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
