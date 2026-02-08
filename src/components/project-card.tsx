@@ -30,12 +30,13 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const isMultiImage = Array.isArray(project.imageId);
-  const thumbnailId = isMultiImage ? project.imageId[0] : project.imageId;
+  const thumbnailId = Array.isArray(project.imageId)
+    ? project.imageId[0]
+    : project.imageId;
   const thumbnailImage = PlaceHolderImages.find((p) => p.id === thumbnailId);
 
   let galleryImages: (ImagePlaceholder | undefined)[] = [];
-  if (isMultiImage) {
+  if (Array.isArray(project.imageId)) {
     galleryImages = project.imageId.map((id) =>
       PlaceHolderImages.find((p) => p.id === id)
     );
@@ -80,7 +81,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <DialogHeader className="sr-only">
           <DialogTitle>{project.id}</DialogTitle>
         </DialogHeader>
-        {isMultiImage ? (
+        {Array.isArray(project.imageId) ? (
           <Carousel className="w-full max-w-5xl" opts={{ loop: true }}>
             <CarouselContent>
               {galleryImages.map((image, index) =>
