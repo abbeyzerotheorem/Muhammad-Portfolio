@@ -20,8 +20,7 @@ import { FigmaIcon } from "@/components/icons/figma-icon";
 import { BlenderIcon } from "@/components/icons/blender-icon";
 
 const projects = [
-  { id: 'project-15', tags: ['Brand Identity', 'Fintech', 'SadaPay'], imageId: 'sadapay-project' },
-  { id: 'project-16', tags: ['Brand Identity', 'Fintech', 'SadaPay'], imageId: 'sadapay-1' },
+  { id: 'sadapay-gallery', tags: ['Brand Identity', 'Fintech', 'SadaPay'], imageId: ['sadapay-1', 'sadapay-2', 'sadapay-3', 'sadapay-4', 'sadapay-5', 'sadapay-6'] },
   { id: 'project-1', tags: ['Logo Design', 'Branding', 'Typography'], imageId: 'project1' },
   { id: 'project-2',  tags: ['Packaging', 'Illustration', 'Print'], imageId: 'project2' },
   { id: 'project-3', tags: ['UI/UX', 'Web Design', 'Figma'], imageId: 'project3' },
