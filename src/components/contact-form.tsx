@@ -63,21 +63,21 @@ export default function ContactForm() {
         name="name"
         placeholder="Your Name"
         required
-        className="bg-background/50 text-lg p-4"
+        className="bg-background/50 text-base p-4"
       />
       <Input
         type="email"
         name="email"
         placeholder="Your Email"
         required
-        className="bg-background/50 text-lg p-4"
+        className="bg-background/50 text-base p-4"
       />
       <Textarea
         name="message"
         placeholder="Your Message"
         required
         rows={5}
-        className="bg-background/50 text-lg p-4"
+        className="bg-background/50 text-base p-4"
       />
       <Button
         type="submit"
