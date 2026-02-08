@@ -3,7 +3,7 @@
     {
       "id": "avatar",
       "description": "Muhammad Taha avatar",
-      "imageUrl": "https://raw.githubusercontent.com/abbeyzerotheorem/image-vault/main/images/1767042036940_WhatsApp_Image_2025-12-27_at_20.43.58.jpeg",
+      "imageUrl": "/Muhammad.jpg",
       "imageHint": "professional portrait"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "project10",
       "description": "Project 10 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/a3/12/75/a31275cb17591a_67de654792d02534bb.jpg",
+      "imageUrl": "Project10.jpg",
       "imageHint": "typography art"
     },
     {
