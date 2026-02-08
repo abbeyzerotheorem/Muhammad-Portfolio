@@ -2,7 +2,7 @@
 
 This is the source code for the personal portfolio of Muhammad Taha, a graphic designer also known as 'Designer Knight'. The site is built with modern web technologies to be fast, beautiful, and engaging.
 
-**[View Live Demo](https://your-live-url.com)** (Replace with your actual URL)
+**[View Live Demo](https://muhammad-ten.vercel.app/)** 
 
 ## Features
 
