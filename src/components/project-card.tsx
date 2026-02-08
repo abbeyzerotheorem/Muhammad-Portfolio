@@ -34,11 +34,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const thumbnailId = isMultiImage ? project.imageId[0] : project.imageId;
   const thumbnailImage = PlaceHolderImages.find((p) => p.id === thumbnailId);
 
-  const galleryImages: (ImagePlaceholder | undefined)[] = isMultiImage
-    ? project.imageId.map((id) => PlaceHolderImages.find((p) => p.id === id))
-    : thumbnailImage
-    ? [thumbnailImage]
-    : [];
+  let galleryImages: (ImagePlaceholder | undefined)[] = [];
+  if (isMultiImage) {
+    galleryImages = project.imageId.map((id) =>
+      PlaceHolderImages.find((p) => p.id === id)
+    );
+  } else if (thumbnailImage) {
+    galleryImages = [thumbnailImage];
+  }
 
   return (
     <Dialog>
