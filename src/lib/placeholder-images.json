@@ -63,7 +63,7 @@
     {
       "id": "project10",
       "description": "Project 10 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/a3/12/75/a31275cb17591a67de654792d02534bb.jpg",
+      "imageUrl": "https://i.pinimg.com/474x/a3/12/75/a31275cb17591a_67de654792d02534bb.jpg",
       "imageHint": "typography art"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "sadapay-project",
       "description": "SadaPay Brand Identity Project",
-      "imageUrl": "/sadapay-brand-identity.jpg",
+      "imageUrl": "/sadapay/sadapay-brand-identity.jpg",
       "imageHint": "fintech branding"
     }
   ]
