@@ -1,7 +1,20 @@
 import type { Metadata } from "next";
+import { Inter, Poppins } from 'next/font/google';
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['400', '700'],
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: ['700', '900'],
+});
 
 export const metadata: Metadata = {
   title: "Designer Knight Portfolio | Muhammad Taha",
@@ -15,12 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700;900&display=swap" rel="stylesheet" />
-      </head>
-      <body className={cn("font-body bg-background text-foreground antialiased min-h-screen")}>
+      <body className={cn(
+        "font-body bg-background text-foreground antialiased min-h-screen",
+        inter.variable,
+        poppins.variable
+      )}>
         {children}
         <Toaster />
       </body>
