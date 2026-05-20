@@ -9,85 +9,85 @@
     {
       "id": "project1",
       "description": "Project 1 placeholder image",
-      "imageUrl": "https://i.pinimg.com/736x/a3/c2/03/a3c203f26cb516224c82da5f33e5d7f4.jpg",
+      "imageUrl": "/project1.jpg",
       "imageHint": "branding identity"
     },
     {
       "id": "project2",
       "description": "Project 2 placeholder image",
-      "imageUrl": "https://i.pinimg.com/736x/ec/05/1a/ec051a0221040b46a5c22c4854b7765b.jpg",
+      "imageUrl": "/project2.jpg",
       "imageHint": "packaging design"
     },
     {
       "id": "project3",
       "description": "Project 3 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/a0/14/ef/a014efbcad4bf85d91533659c70a712c.jpg",
+      "imageUrl": "/project3.jpg",
       "imageHint": "web design"
     },
     {
       "id": "project4",
       "description": "Project 4 placeholder image",
-      "imageUrl": "https://i.pinimg.com/736x/00/92/80/009280b2db7ad945a6d2bb6b3f73ded9.jpg",
+      "imageUrl": "/project4.jpg",
       "imageHint": "digital art"
     },
     {
       "id": "project5",
       "description": "Project 5 placeholder image",
-      "imageUrl": "https://i.pinimg.com/736x/8a/ba/50/8aba5068ed7b445dfca43c02944088f3.jpg",
+      "imageUrl": "/project5.jpg",
       "imageHint": "poster design"
     },
     {
       "id": "project6",
       "description": "Project 6 placeholder image",
-      "imageUrl": "https://i.pinimg.com/736x/b9/9b/f8/b99bf8cba4731b969aef41058ff54b4b.jpg",
+      "imageUrl": "/project6.jpg",
       "imageHint": "logo design"
     },
     {
       "id": "project7",
       "description": "Project 7 placeholder image",
-      "imageUrl": "https://i.pinimg.com/736x/2f/c4/ec/2fc4ec9546f388b62d139afba5f03990.jpg",
+      "imageUrl": "/project7.jpg",
       "imageHint": "editorial layout"
     },
     {
       "id": "project8",
       "description": "Project 8 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/76/92/d2/7692d24b69f6507f5766fbfa45971285.jpg",
+      "imageUrl": "/project8.jpg",
       "imageHint": "3d icons"
     },
     {
       "id": "project9",
       "description": "Project 9 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/1d/ed/c4/1dedc449fd852b219d4ec4e86dfee9df.jpg",
+      "imageUrl": "/project9.jpg",
       "imageHint": "social media"
     },
     {
       "id": "project10",
       "description": "Project 10 placeholder image",
-      "imageUrl": "Project10.jpg",
+      "imageUrl": "/Project10.jpg",
       "imageHint": "typography art"
     },
     {
       "id": "project11",
       "description": "Project 11 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/c9/3a/9f/c93a9f5c85d5bd738f00b3fa2b2d14a3.jpg",
+      "imageUrl": "/project11.jpg",
       "imageHint": "apparel graphics"
     },
     {
       "id": "project12",
       "description": "Project 12 placeholder image",
-      "imageUrl": "https://i.pinimg.com/474x/18/86/cf/1886cfd496bca1e1b1ef3bd8d32d3fa3.jpg",
+      "imageUrl": "/project12.jpg",
       "imageHint": "brand guide"
     },
     {
       "id": "project13",
       "description": "Project 12 placeholder image",
-      "imageUrl": "https://raw.githubusercontent.com/abbeyzerotheorem/image-vault/main/images/1767042036940_WhatsApp_Image_2025-12-27_at_20.43.58.jpeg",
+      "imageUrl": "/project13.jpeg",
       "imageHint": "brand guide"
     },
     {
       "id": "project14",
       "description": "Project 12 placeholder image",
-      "imageUrl": "https://raw.githubusercontent.com/abbeyzerotheorem/image-vault/main/images/1767042042365_WhatsApp_Image_2025-12-27_at_22.41.28.jpeg",
+      "imageUrl": "/project14.jpeg",
       "imageHint": "brand guide"
     },
     {
